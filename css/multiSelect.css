@@ -1,0 +1,355 @@
+.multipleSelectActivityContainer {
+	/*padding: 10px 0px 10px 0px;*/
+}
+
+.multipleSelectActivityContainer .questionTitle {
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+	padding: 0.5em 0em 1em 0em;
+}
+
+/*.multipleSelectActivityContainer .card {
+	margin-bottom: 0px;
+}
+
+.multipleSelectActivityContainer .card-text {
+	font-size: 14px;
+	line-height: 20px;
+}*/
+
+.multipleSelectActivityContainer .alert-success {
+	color: #2B7865;
+    background-color: #D0E0D6;
+    border-color: #2B7865;
+	padding: 0rem;
+	margin-bottom: 0rem;
+	border: 2px solid;
+}
+
+.multipleSelectActivityContainer .alert-warning {
+
+	border: 2px solid #007795;
+	color: #000;
+    background-color: #C1DDE4;
+	padding: 0rem;
+	margin-bottom: 0rem;
+}
+
+.multipleSelectActivityContainer .alert-primary {
+	color: #00446E;
+    background-color: #C1DDE4;
+    border-color: #00446E;
+	padding: 0rem;
+	margin-bottom: 0rem;
+	border: 2px solid;
+}
+
+.multipleSelectActivityContainer .alert p.FeedbackText {
+    color: #000;
+    font-size: 14px;
+    margin: 0.75rem 1.25rem;
+    display: block;
+    line-height: inherit;
+}
+
+.multipleSelectActivityContainer span.feedbackTextContent {
+    font-size: 16px;
+    margin: 0.75rem 1.25rem;
+    display: block;
+	/*margin-bottom: 1rem;*/
+}
+
+.multipleSelectActivityContainer .feedbackDiv-MultipleSelectActivity .correctFeedback hr {
+    border-top: 2px solid #2B7865;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin: 0.75rem 1.25rem;
+}
+
+.multipleSelectActivityContainer .feedbackDiv-MultipleSelectActivity .incorrectFeedback hr {
+    border-top: 2px solid #AE427C;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin: 0.75rem 1.25rem;
+}
+
+.multipleSelectActivityContainer form > ol {
+	counter-reset: list;
+	padding-left: 0;
+	margin-left: 0;
+	margin-bottom: 8px;
+	font-size: 14px;
+    line-height: unset;
+}
+
+.multipleSelectActivityContainer form > ol > li {
+	/*margin: 0.5rem 0;
+	padding-bottom: 0rem;*/
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	list-style: none;
+	background-color:#DDDCDC;
+	border: 2px solid #797676;
+	border-radius: 4px;
+	padding: 0.5rem 0.5rem 0.5rem 1rem;
+	margin-bottom: 0.3rem;
+	display: flex;
+    align-items: center;
+}
+
+.multipleSelectActivityContainer form > ol > li:last-child {
+	padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+.multipleSelectActivityContainer form > ol > li:before {
+	content: counter(list, upper-alpha) ") ";
+	counter-increment: list;
+	font-weight: bold;
+	padding: 0rem 0.5rem 0rem 0rem;
+}
+
+/* Feedback Colors (Hover) */
+.multipleSelectActivityContainer form > ol > li:hover {
+	transition: transform 100ms;
+	transform: scale(1.01);
+	opacity: .9;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.32); 
+	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.32);
+}
+
+.multipleSelectActivityContainer form > ol > li:focus-within {
+	transition: transform 100ms;
+	transform: scale(1.01);
+	opacity: .9;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.32); 
+	box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.32);
+}
+
+.multipleSelectActivityContainer form > ol > li.correct:hover {
+	/*opacity: .9;*/
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(64,132,90,0.32); 
+	box-shadow: 0px 0px 6px 2px rgba(64,132,90,0.32);
+	transition: transform 100ms;
+	transform: scale(1.01);
+	color: #fff;
+}
+
+.multipleSelectActivityContainer form > ol > li.incorrect:hover {
+	/*opacity: .9;*/
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(192,0,0,0.32); 
+	box-shadow: 0px 0px 6px 2px rgba(192,0,0,0.32);
+	transition: transform 100ms;
+	transform: scale(1.01);
+	color: #fff;
+}
+
+/* Feedback Colors (Normal) */
+.multipleSelectActivityContainer form > ol > li.selected {
+	background-color: #C1DDE4;
+	border: 2px solid #007795;
+	cursor: pointer;
+	/*-webkit-box-shadow: 0px 0px 6px 2px rgba(0,119,149,0.32);*/
+	/*box-shadow: 0px 0px 6px 2px rgba(0,119,149,0.32);*/
+	transition: transform 100ms;
+	transform: scale(1.01);
+	color: #000;
+}
+
+/* Feedback Colors */
+.multipleSelectActivityContainer form > ol > li.correct {
+	background-color: #40845A;
+	border: 2px solid #40845A;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(64,132,90,0.32); 
+	box-shadow: 0px 0px 6px 2px rgba(64,132,90,0.32);
+	transition: transform 100ms;
+	transform: scale(1.01);
+	color: #fff;
+}
+
+.multipleSelectActivityContainer form > ol > li.incorrect {
+	background-color: #C00000;
+	border: 2px solid #C00000;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 6px 2px rgba(232,64,55,0.32); 
+	box-shadow: 0px 0px 6px 2px rgba(232,64,55,0.32);
+	transition: transform 100ms;
+	transform: scale(1.01);
+	color: #fff;
+}
+
+.multipleSelectActivityContainer form > ol > li span.feedback {
+	padding-left: 1em;
+	white-space: nowrap;
+	font-weight: bold;
+	margin-left: auto;
+	width: 7em;
+	flex: 0 0 auto;
+}
+
+
+
+
+
+
+.multipleSelectActivityContainer form > ol > li .mcqProblemCheckboxContent {
+	display: inline-block;
+	/*transform: none;
+	backface-visibility: hidden;*/
+}
+
+.multipleSelectActivityContainer form > ol > li label {
+	display: flex;
+	align-items: center;
+	position: relative;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;
+	cursor: pointer;
+	margin-bottom: 0rem;
+}
+
+.multipleSelectActivityContainer form > ol > li label input[type='checkbox'] {
+	display: inline-block;
+	height: 0;
+	width: 0;
+	opacity: 0;  /* hides default ratio input graphics */
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* Checkbox Style and Animation */
+.multipleSelectActivityContainer form > ol > li label input[type='checkbox']+span {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 0.5rem;
+    width: 1.2rem;
+	height: 1.2rem;
+	min-width: 1.2rem;
+    background: transparent;
+    border: 2px solid #797676;
+	background-color: #fff;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    -webkit-transition: all 250ms cubic-bezier(0.4, 0, 0.23, 1);
+    transition: all 250ms cubic-bezier(0.4, 0, 0.23, 1);
+}
+
+.multipleSelectActivityContainer form > ol > li label input[type='checkbox']:checked+span {
+	border: 2px solid #007795;
+	/*background-color: #C1DDE4;*/
+	background-color: #fff;
+	border-radius: 0.2rem;
+	-webkit-animation: shrink-bounce 200ms cubic-bezier(0.4, 0, 0.23, 1);
+	animation: shrink-bounce 200ms cubic-bezier(0.4, 0, 0.23, 1);
+}
+
+.multipleSelectActivityContainer form > ol > li.correct label input[type='checkbox']:checked+span {
+	border: 2px solid #40845A;
+}
+
+.multipleSelectActivityContainer form > ol > li.incorrect label input[type='checkbox']:checked+span {
+	border: 2px solid #C00000;
+}
+
+.multipleSelectActivityContainer form > ol > li label input[type='checkbox']:checked+span:before {
+	content: "";
+	/*position: absolute;*/
+	top: 0rem;
+	/*left: 0.4rem;*/
+	border-right: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	/*border: 3px solid transparent;*/
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	/*-webkit-transform-origin: -100% 100%;
+	transform-origin: -100% 100%;*/
+	-webkit-animation: checkbox-check 125ms 250ms cubic-bezier(0.4, 0, 0.23, 1) forwards;
+	animation: checkbox-check 125ms 250ms cubic-bezier(0.4, 0, 0.23, 1) forwards;
+	margin-bottom: 3px;
+}
+
+
+/* Checkbox Animation Timeline */
+@keyframes shrink-bounce{
+	0%{
+		transform: scale(1);
+	}
+	33%{    
+		transform: scale(.85);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+@keyframes checkbox-check{
+	0%{
+		width: 0;
+		height: 0;
+		border-color: #212121;
+		/*transform: translate3d(0,0,0) rotate(45deg);*/
+	}
+	100%{    
+		width: .6em;
+		height: .9em;
+		border-color: #212121;
+		/*transform: translate3d(0,-.5em,0) rotate(45deg);*/
+		/*transform: translate3d(0) rotate(0deg);*/
+	}
+}
+
+
+
+/* Check Answer */
+button.btn-submitMultipleSelectActivity {
+	background-color: #00446E;
+	border-color: #00446E;
+	color: #FFFFFF;
+}
+button.btn-submitMultipleSelectActivity:hover, button.btn-submitMultipleSelectActivity:focus {
+	background-color: #215f97;
+	border-color: #215f97;
+	color: #FFFFFF;
+	/*box-shadow: none;*/
+}
+
+button.btn-submitMultipleSelectActivity:not(:disabled):not(.disabled).active:focus, 
+button.btn-submitMultipleSelectActivity:not(:disabled):not(.disabled):active:focus {
+    box-shadow: none;
+}
+
+button.btn-submitMultipleSelectActivity:not(:disabled):not(.disabled).active, 
+button.btn-submitMultipleSelectActivity:not(:disabled):not(.disabled):active {
+	background-color: #00446E;
+	border-color: #00446E;
+	color: #FFFFFF;
+}
+
+button.btn-submitMultipleSelectActivity:disabled, button.btn-primary[aria-expanded="true"] {
+	background-color: #215f97;
+	border-color: #215f97;
+	color: #FFFFFF;
+}
+
+button.btn-submitMultipleSelectActivity:disabled:hover, button.btn-submitMultipleSelectActivity[aria-expanded="true"]:hover {
+	background-color: #215f97;
+	border-color: #215f97;
+	color: #FFFFFF;
+	box-shadow: none;
+}
+
