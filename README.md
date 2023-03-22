@@ -1,2 +1,2 @@
-# MultipleSelect
- Multi-Select Interactive Practice Quiz
+# Multiple Select
+Interactive Multiple Select LMS Activity
