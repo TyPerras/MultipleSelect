@@ -101,9 +101,9 @@
     align-items: center;
 }
 
-.multipleSelectActivityContainer form > ol > li:last-child {
+/*.multipleSelectActivityContainer form > ol > li:last-child {
 	padding: 0.5rem 0.5rem 0.5rem 1rem;
-}
+}*/
 
 .multipleSelectActivityContainer form > ol > li:before {
 	content: counter(list, upper-alpha) ") ";
@@ -215,6 +215,26 @@
 	user-select: none;
 	cursor: pointer;
 	margin-bottom: 0rem;
+
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+@media only screen and (max-width: 500px) {
+	.multipleSelectActivityContainer form > ol > li {
+		flex-wrap: wrap;
+		padding: 0.5rem 0.1rem 0.5rem 0.1rem;
+	}
 }
 
 .multipleSelectActivityContainer form > ol > li label input[type='checkbox'] {
